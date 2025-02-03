@@ -1,0 +1,65 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container voor inhoud */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Koppen */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Inputveld */
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Knoppen */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#restart {
+    margin-top: 20px;
+    background-color: #f44336;
+}
+
+#restart:hover {
+    background-color: #d32f2f;
+}
+
+/* Berichtstijl */
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+}
