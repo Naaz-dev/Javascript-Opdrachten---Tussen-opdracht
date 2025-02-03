@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobbelspel</title>
+    <style>
+        /* Stijl voor de hele pagina */
+        body {
+            font-family: Arial, sans-serif;
+            
+            text-align: center;
+            
+            padding: 20px;
+            
+        }
+    
+        /* Layout-container voor speler en computer */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            
+            align-items: center;
+            
+        }
+    
+        /* Dobbelsteenweergave */
+        .dice {
+            font-size: 50px;
+        
+            margin: 20px;
+            
+        }
+    
+        /* Stijl voor het scoreboard */
+        .score {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    
+        /* Stijl voor de knop */
+        .btn {
+            padding: 10px 20px;
+            
+            font-size: 18px;
+            
+            margin-top: 20px;
+            
+            cursor: pointer;
+            /* Laat een pointer verschijnen als je over de knop zweeft */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Het Dobbelspel</h1>
+    <div class="container">
+        <div>
+            <h2>Jouw Dobbelstenen</h2>
+            <div id="playerDice1" class="dice">🎲</div>
+            <div id="playerDice2" class="dice">🎲</div>
+        </div>
+        <div>
+            <h2>Computer Dobbelstenen</h2>
+            <div id="computerDice1" class="dice">🎲</div>
+            <div id="computerDice2" class="dice">🎲</div>
+        </div>
+    </div>
+    <!--Scoreboard-->
+    <div class="score" id="scoreboard">
+        winst: 0 | Verlies: 0 | Gelujkspel: 0
+    </div>
+    <!-- Knop om de dobbelstenen te gooien -->
+    <button type="button" class="btn" id="rollButton">Gooi!</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

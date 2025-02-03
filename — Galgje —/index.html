@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galgje</title>
+
+    <style>
+        body{
+            font-size: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .streepjes {
+            font-size: 2em;
+            letter-spacing: 10px;
+        }
+        .levens, .feedback {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Galgje Spel</h1>
+    <div>
+        <label for="woord">Vul een woord in:</label>
+        <input type="text" id="woord">
+        <button type="submit" id="startKnop">Start</button>
+    </div>
+    <div>
+        <p class="streepjes" id="streepjes"></p>
+    </div>
+    <div>
+        <input type="text" id="letterInput" maxlength="1">
+        <button type="button" id="raadKnop">Raden</button>
+    </div>
+    <div class="levens" id="levens"></div>
+    <div class="feedback" id="feedback"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
